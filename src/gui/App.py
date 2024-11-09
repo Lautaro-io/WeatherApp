@@ -49,7 +49,7 @@ class App(ctk.CTk):
         #///////////////////////////////////////////////////////////////////////////////////////////////
         self.mainFrame = ctk.CTkFrame(self, fg_color="steelblue")
         self.mainFrame.grid(row=2, column=0)
-
+#sda
         self.submitBtn = ctk.CTkButton(self.mainFrame, text="Search", width=200, command=self.see_temp , fg_color="")
         self.submitBtn.grid(row=0, column=1)
         self.bind("<Return>", lambda event: self.see_temp())
