@@ -91,17 +91,17 @@ class App(ctk.CTk):
         self.city.destroy()
         self.frameOptions = ctk.CTkFrame(self, width=200, height=50, fg_color="steelblue")
         self.frameOptions.grid_columnconfigure((0, 1, 2), weight=1)
-        self.frameOptions.grid(row=2, column=0, pady=5)
+        self.frameOptions.grid(row=2, column=0, pady=15)
 
         self.backBtn = ctk.CTkButton(self, text="Back", width=20, command=self.go_back)
         self.backBtn.grid(row=3, column=0, pady=10)
 
         # ------------------------------------------------------------------------------------------
         self.center = ctk.CTkFrame(self.frameOptions, fg_color="steelblue" )
-        self.center.grid(row=0, column=1, sticky="nsew")
+        self.center.grid(row=0, column=1, sticky="nsew",pady = 10)
 
-        self.labelFrame = ctk.CTkFrame(self.center, fg_color="RoyalBlue4", corner_radius=15, width=150 ,height= 100 )
-        self.labelFrame.grid(row=0, column=0, sticky="nsew",ipady= 20 ,ipadx = 20)
+        self.labelFrame = ctk.CTkFrame(self.center, fg_color="RoyalBlue4", corner_radius=20)
+        self.labelFrame.grid(row=0, column=0, sticky="nsew",ipady= 10 ,ipadx = 10,pady = 25,padx = 25)
         self.labelTemp = ctk.CTkLabel(self.labelFrame, text="", image=icono, compound="center", font=("Impact", 35, "bold"))
         self.labelTemp.grid(row=0, column=1, sticky = "nsew")
         self.tempLabel = ctk.CTkLabel(self.labelFrame, text=registro, font=("Roboto", 20, "bold"))
