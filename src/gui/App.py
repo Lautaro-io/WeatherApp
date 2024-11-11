@@ -21,16 +21,16 @@ class App(ctk.CTk):
         y = (screen_height // 2) - (alto // 2)
 
         """""//////////////////////////////////// ICONOS //////////////////////////////////////////"""
-        self.sunIcon = PhotoImage(file="assets/soleado.png")
-        self.titleIcon = PhotoImage(file="assets/WEATHERAPP-removebg-preview (1).png")
-        self.waterIcon = PhotoImage(file="assets/agua.png")
-        self.celsiusIcon = PhotoImage(file="assets/celsius.png")
-        self.nightIcon = PhotoImage(file="assets/noche.png")
-        self.nightNubIcon = PhotoImage(file="assets/noche-nublada.png")
-        self.nubIcon = PhotoImage(file="assets/nublado.png")
-        self.vientoNubIcon = PhotoImage(file="assets/viento.png")
-        self.sunNubIcon = PhotoImage(file="assets/solnube.png")
-        self.stormIcon = PhotoImage(file="assets/strom.png")
+        self.sunIcon = PhotoImage(file="gui/assets/soleado.png")
+        self.titleIcon = PhotoImage(file="gui/assets/WEATHERAPP-removebg-preview (1).png")
+        self.waterIcon = PhotoImage(file="gui/assets/agua.png")
+        self.celsiusIcon = PhotoImage(file="gui/assets/celsius.png")
+        self.nightIcon = PhotoImage(file="gui/assets/noche.png")
+        self.nightNubIcon = PhotoImage(file="gui/assets/noche-nublada.png")
+        self.nubIcon = PhotoImage(file="gui/assets/nublado.png")
+        self.vientoNubIcon = PhotoImage(file="gui/assets/viento.png")
+        self.sunNubIcon = PhotoImage(file="gui/assets/solnube.png")
+        self.stormIcon = PhotoImage(file="gui/assets/strom.png")
 
         self.resizable(False, False)
         self.geometry(f"{ancho}x{alto}+{x}+{y}")
@@ -136,7 +136,7 @@ class App(ctk.CTk):
             self.frameWind.grid(row=2, column=0, pady=10, sticky="nsew")
             self.labelWind = ctk.CTkLabel(self.frameWind, text=f"{wind}\nKm/h", image=self.vientoNubIcon, compound="right", font=("Impact", 35, "bold"))
             self.labelWind.grid(row=0, column=0, padx=10, sticky = "nsew",ipady = 5)
-#
+##
             # ------------------------------------------------------------------------------------------
             self.frameHumity = ctk.CTkFrame(self.center, fg_color="steelblue")
             self.frameHumity.grid(row=2, column=0, pady=10, sticky="nsew", padx=350)
@@ -159,5 +159,3 @@ class App(ctk.CTk):
         self.main()
 
 
-app = App()
-app.mainloop()
