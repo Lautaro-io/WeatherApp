@@ -43,14 +43,14 @@ class App(ctk.CTk):
         self.headerFrame.grid(row=0, column=0,padx = 110)
         self.title = ctk.CTkLabel(self.headerFrame, text="", image=self.titleIcon, compound="center", font=("Roboto", 30, "bold"))
         self.title.grid(row=0, column=0)
-        self.city = ctk.CTkEntry(self.headerFrame, placeholder_text="Elige una ciudad: EJ: Miramar,AR ", width=200)
+        self.city = ctk.CTkEntry(self.headerFrame, placeholder_text_color="gray14",text_color="black",placeholder_text="Elige una ciudad: EJ: Miramar,AR ", width=200,fg_color="white" , border_color="black")
         self.city.grid(row=3, column=0, pady=10, padx=50)
 
         #///////////////////////////////////////////////////////////////////////////////////////////////
         self.mainFrame = ctk.CTkFrame(self, fg_color="steelblue")
         self.mainFrame.grid(row=2, column=0)
 #sda
-        self.submitBtn = ctk.CTkButton(self.mainFrame, text="Search", width=200, command=self.see_temp , fg_color="")
+        self.submitBtn = ctk.CTkButton(self.mainFrame, text="Search", width=200, command=self.see_temp , fg_color="red")
         self.submitBtn.grid(row=0, column=1)
         self.bind("<Return>", lambda event: self.see_temp())
         self.grid_rowconfigure(2, weight=1)
@@ -70,7 +70,7 @@ class App(ctk.CTk):
         estado = datos["current"]["condition"]["text"]
         wind = datos["current"]["wind_kph"]
         humidity = datos["current"]["humidity"]
-        registro = f"\nTemperatura Actual:{temp}grados Celsius\nViento: {wind} km/h\nHumedad : {humidity}% "
+        registro = f"\nTemperatura actual: {temp}°\nEstado: {estado} "
         if estado == "Sunny":
             icono = self.sunIcon
         elif estado == "Partly cloudy":
@@ -99,13 +99,12 @@ class App(ctk.CTk):
         # ------------------------------------------------------------------------------------------
         self.center = ctk.CTkFrame(self.frameOptions, fg_color="steelblue" )
         self.center.grid(row=0, column=1, sticky="nsew")
-        self.center.grid_columnconfigure(0, weight=1)
 
-        self.labelFrame = ctk.CTkFrame(self.center, fg_color="RoyalBlue4", corner_radius=15, width=150 ,height= 100 , expand = True)
-        self.labelFrame.grid(row=0, column=0, sticky="nsew")
-        self.labelTemp = ctk.CTkLabel(self.labelFrame, text=str(temp), image=icono, compound="right", font=("Impact", 35, "bold"))
-        self.labelTemp.grid(row=0, column=1, padx=10, sticky = "nsew")
-        self.tempLabel = ctk.CTkLabel(self.labelFrame, text=estado, font=("Roboto", 20, "bold"))
+        self.labelFrame = ctk.CTkFrame(self.center, fg_color="RoyalBlue4", corner_radius=15, width=150 ,height= 100 )
+        self.labelFrame.grid(row=0, column=0, sticky="nsew",ipady= 20 ,ipadx = 20)
+        self.labelTemp = ctk.CTkLabel(self.labelFrame, text="", image=icono, compound="center", font=("Impact", 35, "bold"))
+        self.labelTemp.grid(row=0, column=1, sticky = "nsew")
+        self.tempLabel = ctk.CTkLabel(self.labelFrame, text=registro, font=("Roboto", 20, "bold"))
         self.tempLabel.grid(row=1, column=1, sticky = "nsew")
 
         # ------------------------------------------------------------------------------------------
