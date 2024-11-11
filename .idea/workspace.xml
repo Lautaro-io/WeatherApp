@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c62204d-8a24-447f-88d1-bfd448949eba" name="Changes" comment="updates">
+      <change beforePath="$PROJECT_DIR$/.idea/WeatherApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeatherApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/App.py" afterDir="false" />
     </list>
@@ -29,12 +30,12 @@
     &quot;assignee&quot;: &quot;Lautaro-io&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lautaro-io/WeatherApp.git",
-    "accountId": "46ed0032-56f6-4eec-9f07-ff43872cd349"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lautaro-io/WeatherApp.git&quot;,
+    &quot;accountId&quot;: &quot;46ed0032-56f6-4eec-9f07-ff43872cd349&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -44,13 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.App.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.App.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="WeatherApp" />
@@ -140,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731346548004</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updates">
+      <option name="closed" value="true" />
+      <created>1731346979707</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731346979707</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
