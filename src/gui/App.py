@@ -136,7 +136,7 @@ class App(ctk.CTk):
             self.frameWind.grid(row=2, column=0, pady=10, sticky="nsew")
             self.labelWind = ctk.CTkLabel(self.frameWind, text=f"{wind}\nKm/h", image=self.vientoNubIcon, compound="right", font=("Impact", 35, "bold"))
             self.labelWind.grid(row=0, column=0, padx=10, sticky = "nsew",ipady = 5)
-
+#
             # ------------------------------------------------------------------------------------------
             self.frameHumity = ctk.CTkFrame(self.center, fg_color="steelblue")
             self.frameHumity.grid(row=2, column=0, pady=10, sticky="nsew", padx=350)
