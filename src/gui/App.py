@@ -19,7 +19,7 @@ class App(ctk.CTk):
 
         x = (screen_width // 2) - (ancho // 2)
         y = (screen_height // 2) - (alto // 2)
-
+#
         """""//////////////////////////////////// ICONOS //////////////////////////////////////////"""
         self.sunIcon = PhotoImage(file="gui/assets/soleado.png")
         self.titleIcon = PhotoImage(file="gui/assets/WEATHERAPP-removebg-preview (1).png")
