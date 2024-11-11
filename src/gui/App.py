@@ -77,7 +77,8 @@ class App(ctk.CTk):
             "Snow": "Nieve",
             "Thunderstorm": "Tormenta"
         }
-        api_key = "928e9266acd34ebd98f142154240911"
+        api_key = "*****************************"
+        
         ciudad = self.city.get()
         try:
 
